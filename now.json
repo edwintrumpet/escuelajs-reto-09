@@ -1,0 +1,12 @@
+{
+    "name": "reto9escuelajavascript",
+    "version": 2,
+    "builds": [{ "src": "src/index.js", "use": "@now/node" }],
+    "routes": [{ "src": "/(.*)", "dest": "/src/index.js" }],
+    "env": {
+        "DB_USER": "@reto-db-user",
+        "DB_PASSWORD": "@reto-db-password",
+        "DB_HOST": "@reto-db-host",
+        "DB_NAME": "@reto-db-name"
+    }
+}

@@ -31,7 +31,7 @@ const platziStore = (app) => {
     const { productId } = req.params
     try{
       const product = await productService.getOneProduct(productId)
-      res.status(200).json({data: product, message: 'product detail'})
+      res.status(200).json({data: product, message: 'Product detail'})
     }catch(err){
       console.log(err)
     }
