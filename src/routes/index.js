@@ -21,7 +21,7 @@ const platziStore = (app) => {
   router.get('/products', async (req, res, next) => {
     try{
       const storeProducts = await productService.getProducts()
-      res.status(200).json({data: storeProducts, message: 'products list'});
+      res.status(200).json({data: storeProducts, message: 'Products list'});
     }catch(err){
       console.log(err)
     }
